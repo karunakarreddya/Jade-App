@@ -1,0 +1,73 @@
+html
+  head
+    title
+    |          
+    meta(charset='utf-8')
+    |          
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |          
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |          
+    link(rel='icon', href='/images/favicon.png', type='image/x-icon')
+    |          
+    link(type='text/css', rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    |          
+    script(src='https://use.edgefonts.net/lobster-two.js ')
+    |  
+    |          
+    style.
+      p.headingFont{
+      font-family: lobster-two, cursive;
+      font-size: 40px;
+      }
+  |     
+  body
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            |                         
+            span.icon-bar
+            |                         
+            span.icon-bar
+          |                     
+          a.navbar-collapse(href='/') ILoveMyCity
+        |                 
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/mumbi') Mumbi
+            |                         
+            li
+              a(href='/delhi') Delhi
+            |                         
+            li
+              a(href='/hyd') Hyderabad
+            |                         
+            li
+              a(href='/amaravati') Amaravati
+            |                         
+            li
+              a(href='/agra') Agra
+    |         
+    br
+    |  
+    br
+    br
+    |         
+    .container
+      .row
+        .col-md-12
+          p.headingFont(align='center')
+          =headline
+    |         
+    br
+    |         
+    .container
+      .row
+        .col-md-12
+          img.img-responsive(src='/images/main.jpg', alt='iLoveMyCity')
+    |         
+    script(src='/javascripts/jquery-1.11.3.js')
+    script(src= '/javascripts/bootstrap.min.js')
